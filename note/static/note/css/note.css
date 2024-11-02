@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    display: flex;
+    height: 100vh;
+    font-family: system-ui;
+
+}
+
+.back {
+    height: 100%;
+    width: 300px;
+}
+
+.back a:hover img {
+    filter: invert(5%);
+}
+
+.container {
+    width: 90vh;
+    height: 100%;
+    align-items: left;
+    margin: auto;
+}
+
+.container .content {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+h1 {
+
+}
+
+.pub_date {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.content {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}

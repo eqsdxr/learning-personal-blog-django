@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note #{{ note.id }}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'note/css/note.css' %}">
+    <script src="{% static 'note/js/note.js' %}"></script>
+</head>
+<body>
+    <div class="back">
+        <a href="{% url 'homepage:homepage'%}">
+            <img src="{% static 'note/svg/back.svg' %}">
+        </a>
+    </div>
+    <div class="container">
+        <h1>{{ note.title }}</h1>
+        <div class="pub_date">{{ note.pub_date }}</div>
+        <div class="content">{{ note.content }}</div>
+    </div>
+</body>
+</html>
